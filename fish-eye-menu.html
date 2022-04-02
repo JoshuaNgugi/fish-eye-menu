@@ -13,21 +13,11 @@
       list-style-type: none;
     }
 
-    .zoom {
-      padding: 5px;
-      background-color: green;
-      transition: transform .2s;
-      width: 200px;
-      height: 70px;
-      margin: 5 auto;
-    }
-
     .dot {
       width: 100px;
       height: 100px;
       background-color: #bbb;
       border-radius: 50%;
-      display: inline-block;
       text-align: center;
       transition: transform .2s;
       margin: 5 auto;
@@ -45,18 +35,12 @@
       color: red;
     }
 
-    .zoom:hover .hide {
-      display: block;
-      color: red;
-    }
-
     .dot:hover {
       -ms-transform: scale(1.5);
       /* IE 9 */
       -webkit-transform: scale(1.5);
       /* Safari 3-8 */
       transform: scale(1.5);
-      display: block;
     }
 
     img {
@@ -84,13 +68,18 @@
         <div class="centered">Centered</div>
       </div>
     </li>
-    <li>
-      <div class="dot">Tea</div>
+    <li class="dot">
+      <div>
+        <img src="images/food.jpg" alt="Avatar">
+        <div class="centered">Centered</div>
+      </div>
     </li>
-    <li>
-      <div class="dot">Tea</div>
+    <li class="dot">
+      <div>
+        <img src="images/food.jpg" alt="Avatar">
+        <div class="centered">Centered</div>
+      </div>
     </li>
-
   </ul>
 
 </body>
