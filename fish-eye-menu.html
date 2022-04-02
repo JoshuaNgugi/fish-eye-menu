@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    li {
+      margin: 10px 0;
+      list-style-type: none;
+    }
+
+    .zoom {
+      padding: 5px;
+      background-color: green;
+      transition: transform .2s;
+      width: 200px;
+      height: 70px;
+      margin: 5 auto;
+    }
+
+    .dot {
+      width: 100px;
+      height: 100px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      transition: transform .2s;
+      margin: 5 auto;
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .zoom:hover {
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      -webkit-transform: scale(1.5);
+      /* Safari 3-8 */
+      transform: scale(1.5);
+      display: block;
+    }
+
+    .zoom:hover span {
+      display: inline;
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.0);
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .myDIV:hover .hide {
+      display: block;
+      color: red;
+    }
+
+    .zoom:hover .hide {
+      display: block;
+      color: red;
+    }
+
+    .dot:hover {
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      -webkit-transform: scale(1.5);
+      /* Safari 3-8 */
+      transform: scale(1.5);
+      display: block;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* .zoom span {
+      position: absolute;
+      display: none;
+      z-index: 99;
+    }
+
+    .zoom:hover span {
+      display: block;
+      -ms-transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      transform: scale(1.0);
+    } */
+  </style>
+</head>
+
+<body>
+
+  <ul style="list-style-type:none;">
+    <li class="dot">
+      <div>
+        <img src="images/food.jpg" alt="Avatar">
+        <div class="centered">Centered</div>
+      </div>
+    </li>
+    <li>
+      <div class="dot">Tea</div>
+    </li>
+    <li>
+      <div class="dot">Tea</div>
+    </li>
+
+  </ul>
+
+</body>
+
+</html>
