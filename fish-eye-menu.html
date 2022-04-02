@@ -36,27 +36,11 @@
       color: white;
     }
 
-    .zoom:hover {
-      -ms-transform: scale(1.5);
-      /* IE 9 */
-      -webkit-transform: scale(1.5);
-      /* Safari 3-8 */
-      transform: scale(1.5);
-      display: block;
-    }
-
-    .zoom:hover span {
-      display: inline;
-      -ms-transform: scale(1.5);
-      -webkit-transform: scale(1.5);
-      transform: scale(1.0);
-    }
-
     .hide {
       display: none;
     }
 
-    .myDIV:hover .hide {
+    .dot:hover img {
       display: block;
       color: red;
     }
@@ -79,6 +63,7 @@
       border-radius: 50%;
       width: 100px;
       height: 100px;
+      display: none;
     }
 
     .centered {
@@ -87,19 +72,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
-
-    /* .zoom span {
-      position: absolute;
-      display: none;
-      z-index: 99;
-    }
-
-    .zoom:hover span {
-      display: block;
-      -ms-transform: scale(1.5);
-      -webkit-transform: scale(1.5);
-      transform: scale(1.0);
-    } */
   </style>
 </head>
 
